@@ -1,19 +1,11 @@
 # LineTrace_Robot_Lessons
 
-Arduinoを用いたライントレースロボット制御のための学習用サンプルコード集です。
-基礎的なIO操作から、PID制御を用いた高度なライントレースまでを段階的に学ぶことができます。
+Arduino Unoを用いた機械工作・制御実習用のサンプルコード一式である。
 
 ## ディレクトリ構成
-
-*   **01_Basic_IO**
-    タクトスイッチの入力を読み取り、LEDを点灯・消灯させる基礎的なプログラム。
-*   **02_Basic_Motor**
-    モータドライバICを介して、直流モーターの正転・逆転・停止を行うプログラム。
-*   **03_Basic_PWM**
-    `delay()` を用いて手動でパルス波を生成し、ソフトウェアPWMでモーターの速度を制御するプログラム。
-*   **04_Basic_LineTrace**
-    5つのフォトリフレクタとソフトウェアPWMを用い、`if-else` の条件分岐でコースを走る基本的なライントレースプログラム。
-*   **05_Advanced_Recovery**
-    【発展】メロディーの非同期再生（`millis()`）、直進判定の緩和、およびコースアウト時に2秒間復帰を試みる状態記憶機能を実装したプログラム。
-*   **06_Advanced_PID**
-    【発展】P(比例)・D(微分)制御を用いて、無段階で滑らかな旋回と、カーブ侵入時の自動減速を実装した実践的なプログラム。
+- `01_Exercise1_SwitchLED/01_Exercise1_SwitchLED.ino` : 3.3 演習1（タクトスイッチによるLED点灯制御）
+- `02_Exercise2_TimerBlink/02_Exercise2_TimerBlink.ino` : 4.3 演習2（Timer1割込みによるLED点滅）
+- `03_Exercise3_BasicPWMTrace/03_Exercise3_BasicPWMTrace.ino` : 5.2 演習3（analogWriteによる基本ライントレース）
+- `04_Exercise4_SteppedPulseTrace/04_Exercise4_SteppedPulseTrace.ino` : 5.3 演習4（周期50ms間欠駆動・直線緩加速・2段階カーブ旋回）
+- `05_Applied_CourseRecovery/05_Applied_CourseRecovery.ino` : 5.4 応用演習（直進判定の緩和・2秒間コースアウト自動復帰）
+- `06_Advanced_PID_LineTrace/06_Advanced_PID_LineTrace.ino` : 6.2 発展（動的ベース速度減速・コース復帰付きPD/PID制御）
