@@ -1,6 +1,6 @@
 # LineTrace_Robot_Lessons
 
-Arduino Unoを用いた機械工作・制御実習用のサンプルコード一式である。
+Arduino Unoを用いた機械工作・制御実習用のサンプルコード一式
 
 ## ディレクトリ構成
 - `01_Exercise1_SwitchLED/01_Exercise1_SwitchLED.ino` : 3.3 演習1（タクトスイッチによるLED点灯制御）
